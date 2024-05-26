@@ -1,1 +1,1 @@
-Sample code for studying JUnit 4 and JUnit 5.
+Sample code for studying TestNG, JUnit 4 and JUnit 5.

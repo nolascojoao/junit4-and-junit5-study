@@ -25,6 +25,9 @@ dependencies {
     testImplementation group: 'junit', name: 'junit', version: '4.13'
     testImplementation group: 'pl.pragmatists', name: 'JUnitParams', version: '1.1.1'
     
+    // TestNG
+    testImplementation group: 'org.testng', name: 'testng', version: '7.10.2'
+    
     // This dependency is exported to consumers, that is to say found on their compile classpath.
     api 'org.apache.commons:commons-math3:3.6.1'
 
