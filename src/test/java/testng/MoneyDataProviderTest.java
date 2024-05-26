@@ -18,8 +18,8 @@ public class MoneyDataProviderTest {
 	public void testConstructorWithDataProvider(int amount, String currency) {
 		Money money = new Money(amount, currency);
 		
-		assertEquals(amount, money.getAmount());
-		assertEquals(currency, money.getCurrency());
+		assertEquals(money.getAmount(), amount);
+		assertEquals(money.getCurrency(), currency);
 	}
 
 }
