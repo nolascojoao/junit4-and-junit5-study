@@ -1,5 +1,6 @@
 package junit4;
 
+import static junitparams.JUnitParamsRunner.$;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
@@ -12,11 +13,18 @@ import junitparams.Parameters;
 @RunWith(JUnitParamsRunner.class)
 public class MoneyParameterizedTestWithJunit4 {
 	
-	private static final Object[] getMoney() {
+	/*private static final Object[] getMoney() {
 		return new Object[] {
 				new Object[] {10, "USD"},
 				new Object[] {20, "EUR"}
 		};
+	}*/
+	
+	private static final Object[] getMoney() {
+		return $(
+				$(10, "USD"),
+				$(20, "EUR")
+				);
 	}
 	
 	@Test
